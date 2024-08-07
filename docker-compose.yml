@@ -11,7 +11,7 @@ services:
       EULA: 'TRUE'
       TYPE: 'AUTO_CURSEFORGE'
       VERSION: '1.20.1'
-      MEMORY: ''
+      MEMORY: '6G'
       JVM_XX_OPTS: '-XX:+UseContainerSupport -XX:MaxRAMPercentage=75'
       ENABLE_ROLLING_LOGS: 'true'
     volumes:
