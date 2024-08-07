@@ -11,13 +11,12 @@ services:
       EULA: 'TRUE'
       TYPE: 'AUTO_CURSEFORGE'
       VERSION: '1.20.1'
-      MEMORY: '6G'
-      JVM_XX_OPTS: '-XX:+UseContainerSupport -XX:MaxRAMPercentage=75'
+      MEMORY: '12G'
       ENABLE_ROLLING_LOGS: 'true'
+      USE_AIKAR_FLAGS: 'true'
     volumes:
       - ./data:/data
     ports:
       - '25569:25565'
       - '19569:19565'
     restart: always
-    mem_limit: 6g
